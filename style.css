@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: grid;
+    grid-template-areas: 'nav nav nav'
+        'leftt rightt rightt'
+        'education education education'
+        'skills skills skills'
+        'softskills softskills softskills'
+        'projects projects projects'
+        'trainings trainings trainings'
+        'certifications certifications certifications'
+        'extracurriculars extracurriculars extracurriculars'
+        'achievements achievements achievements'
+        'hobbies hobbies hobbies'
+        'languages languages languages'
+        'profiles profiles profiles';
+    grid-gap: 15px;
+    width: 99.75%;
+}
+
+.nav {
+    position: sticky;
+    top: 0.5px;
+}
+
+.navbar {
+    margin: 5px;
+    padding: 10px;
+    background: rgb(157, 0, 255);
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    border-radius: 15px;
+}
+
+.design {
+    /* border: 2px solid red; */
+    margin: 2px 0;
+    text-align: center;
+}
+
+.left img {
+    height: 175px;
+    width: 150px;
+    margin: 15px 0 0 40px;
+    border-radius: 15px;
+}
+
+#nav {
+    grid-area: nav;
+}
+
+#left {
+    grid-area: leftt;
+}
+
+#right {
+    grid-area: rightt;
+}
+
+.top {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.top a {
+    text-decoration: none;
+    color: black;
+}
+
+.right {
+    text-align: justify;
+}
+
+.right p {
+    margin: 10px;
+}
+
+#education {
+    grid-area: education;
+}
+.education h2{
+padding-top: 30px;
+}
+.education i{
+    padding-right: 10px;
+}
+
+#skills {
+    grid-area: skills;
+}
+
+#softskills {
+    grid-area: softskills;
+}
+
+#projects {
+    grid-area: projects;
+}
+
+#trainings {
+    grid-area: trainings;
+}
+
+#certifications {
+    grid-area: certifications;
+}
+
+#extracurriculars {
+    grid-area: extracurriculars;
+}
+
+#achievements {
+    grid-area: achievements;
+}
+
+#hobbies {
+    grid-area: hobbies;
+}
+
+#languages {
+    grid-area: languages;
+}
+
+#profiles {
+    grid-area: profiles;
+}
+
+.content {
+    margin: 20px auto;
+    border: 2px solid green;
+    text-align: center;
+    width: 100%;
+}

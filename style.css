@@ -84,10 +84,12 @@ body {
 #education {
     grid-area: education;
 }
-.education h2{
-padding-top: 30px;
+
+.education h2 {
+    padding-top: 30px;
 }
-.education i{
+
+.education i {
     padding-right: 10px;
 }
 
@@ -95,12 +97,39 @@ padding-top: 30px;
     grid-area: skills;
 }
 
+.skills div {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+}
+
+.skills .text {
+    /* border: 2px solid blue; */
+}
+
 #softskills {
     grid-area: softskills;
 }
 
+.softskills div {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+}
+
+.softskills .text {
+    /* border: 2px solid blue; */
+}
+
 #projects {
     grid-area: projects;
+}
+
+.projects div {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+}
+
+.projects .domain {
+    justify-content: center;
 }
 
 #trainings {
@@ -123,17 +152,44 @@ padding-top: 30px;
     grid-area: hobbies;
 }
 
+.hobbies div {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+}
+
+.hobbies .text {
+    /* border: 2px solid blue; */
+}
+
 #languages {
     grid-area: languages;
+}
+
+.languages div {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+}
+
+.languages .text {
+    /* border: 2px solid blue; */
 }
 
 #profiles {
     grid-area: profiles;
 }
 
+.profiles div {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+}
+
+.profiles a {
+    /* border: 2px solid blue; */
+}
+
 .content {
     margin: 20px auto;
-    border: 2px solid green;
+    /* border: 2px solid green; */
     text-align: center;
     width: 100%;
 }

@@ -6,83 +6,184 @@
 body {
     display: grid;
     grid-template-areas: 'nav nav nav'
-        'leftt rightt rightt'
-        'education education education'
-        'skills skills skills'
-        'softskills softskills softskills'
-        'projects projects projects'
-        'trainings trainings trainings'
-        'certifications certifications certifications'
-        'extracurriculars extracurriculars extracurriculars'
-        'achievements achievements achievements'
-        'hobbies hobbies hobbies'
-        'languages languages languages'
-        'profiles profiles profiles';
-    grid-gap: 15px;
-    width: 99.75%;
-}
-
-.nav {
-    position: sticky;
-    top: 0.5px;
-}
-
-.navbar {
-    margin: 5px;
-    padding: 10px;
-    background: rgb(157, 0, 255);
-    list-style: none;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    justify-content: center;
-    border-radius: 15px;
-}
-
-.design {
-    /* border: 2px solid red; */
-    margin: 2px 0;
-    text-align: center;
-}
-
-.left img {
-    height: 175px;
-    width: 150px;
-    margin: 15px 0 0 40px;
-    border-radius: 15px;
+        'heading heading heading'
+        'resume-part resume-part resume-part';
 }
 
 #nav {
     grid-area: nav;
 }
 
-#left {
-    grid-area: leftt;
+#nav {
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
 
-#right {
-    grid-area: rightt;
+.navbar {
+    padding: 10px;
+    background: rgb(0, 0, 0);
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    justify-content: center;
 }
 
-.top {
+
+.navbar li {
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+.design {
+    margin: 2px 0;
     text-align: center;
-    margin-bottom: 15px;
 }
 
-.top a {
+.togglenav {
+    display: block;
+    background: rgb(0, 0, 0);
+}
+
+.togglebutton {
+    background: rgb(0, 0, 0);
+}
+
+.togglebutton .fa-bars {
+    background: black;
+    color: white;
+    font-size: 30px;
+    padding: 10px 0 10px 20px;
+}
+
+.toggle-navbar {
+    padding: 0 0 10px 0;
+    list-style: none;
+    justify-content: center;
+}
+
+.toggle-navbar li {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.toggle-navbar a {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+#heading {
+    grid-area: heading;
+}
+
+.heading {
+    display: flex;
+}
+
+.left {
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.left img {
+    height: 175px;
+    width: 150px;
+    margin-left: 25px;
+    border-radius: 15px;
+}
+
+.heading .right {
+    padding: 15px 25px;
+    text-align: justify;
+}
+
+.heading .right .top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.heading a {
     text-decoration: none;
     color: black;
 }
 
-.right {
-    text-align: justify;
+hr {
+    margin: 10px;
 }
 
-.right p {
-    margin: 10px;
+#resume-part {
+    grid-area: resume-part;
+}
+
+.resume-part {
+    display: grid;
+    grid-template-areas:
+        'education education education'
+        'skills skills skills'
+        'softskills softskills softskills'
+        'projects projects projects'
+        'trainings trainings trainings'
+        'certifications certifications certifications'
+        'cocurriculars cocurriculars cocurriculars'
+        'achievements achievements achievements'
+        'hobbies hobbies hobbies'
+        'languages languages languages'
+        'profiles profiles profiles';
+}
+
+.content {
+    margin: 20px auto;
+    text-align: center;
+    width: 100%;
+}
+
+.content div {
+    display: none;
+    border-radius: 20px;
+    margin: 20px 15px 0 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0);
+    padding-bottom: 25px;
+    background-color: rgb(0, 0, 0, 0.08);
+}
+
+.content h1 {
+    background: rgb(0, 255, 225);
+    box-shadow: 2.5px 5px 0 rgb(0, 150, 255);
+    border-radius: 10px;
+    padding: 7px;
+    position: sticky;
+    margin-top: -20px;
+    top: 66.8px;
+    cursor: pointer;
+}
+
+.text {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-shadow: 1px 1px rgb(255, 255, 255);
+
+    background: rgb(98, 255, 98);
+    padding: 10px 0;
+    border-radius: 100px;
+    box-shadow: 0 0 4px rgb(29, 196, 0);
 }
 
 #education {
     grid-area: education;
+}
+
+.education div {
+    display: none;
 }
 
 .education h2 {
@@ -98,34 +199,35 @@ body {
 }
 
 .skills div {
-    display: grid;
+    display: none;
+    padding: 25px 10vw;
     grid-template-columns: repeat(2, auto);
+    grid-row-gap: 15px;
+    grid-column-gap: 4vw;
 }
 
-.skills .text {
-    /* border: 2px solid blue; */
-}
+.skills .text {}
 
 #softskills {
     grid-area: softskills;
 }
 
 .softskills div {
-    display: grid;
+    display: none;
+    padding: 25px 10vw;
     grid-template-columns: repeat(2, auto);
+    grid-row-gap: 15px;
+    grid-column-gap: 4vw;
 }
 
-.softskills .text {
-    /* border: 2px solid blue; */
-}
+.softskills .text {}
 
 #projects {
     grid-area: projects;
 }
 
 .projects div {
-    display: grid;
-    grid-template-columns: repeat(4, auto);
+    display: none;
 }
 
 .projects .domain {
@@ -136,16 +238,82 @@ body {
     grid-area: trainings;
 }
 
+.trainings div {
+    display: none;
+}
+
 #certifications {
     grid-area: certifications;
 }
 
-#extracurriculars {
-    grid-area: extracurriculars;
+.certifications div {
+    display: none;
+    grid-template-columns: repeat(5, auto);
+    grid-column-gap: 40px;
+    grid-row-gap: 10px;
+}
+
+.certifications .proofs {
+    margin: 30px 20px 0 20px;
+    align-items: center;
+}
+
+.certifications a {
+    text-decoration: none;
+}
+
+.certifications img {
+    height: 150px;
+    width: 200px;
+    box-shadow: 0 0 10px rgba(0, 0, 0);
+    border-radius: 15px;
+}
+
+.certifications p {
+    margin-top: 10px;
+    font-weight: bold;
+    color: black;
+}
+
+#cocurriculars {
+    grid-area: cocurriculars;
+}
+
+.cocurriculars div {
+    display: none;
+    grid-template-columns: repeat(5, auto);
+    grid-column-gap: 40px;
+    grid-row-gap: 10px;
+}
+
+.cocurriculars .proofs {
+    margin: 30px 20px 0 20px;
+    align-items: center;
+}
+
+.cocurriculars a {
+    text-decoration: none;
+}
+
+.cocurriculars img {
+    height: 150px;
+    width: 200px;
+    box-shadow: 0 0 10px rgba(0, 0, 0);
+    border-radius: 15px;
+}
+
+.cocurriculars p {
+    margin-top: 10px;
+    font-weight: bold;
+    color: black;
 }
 
 #achievements {
     grid-area: achievements;
+}
+
+.achievements div {
+    display: none;
 }
 
 #hobbies {
@@ -153,25 +321,31 @@ body {
 }
 
 .hobbies div {
-    display: grid;
+    display: none;
+    padding: 25px 10vw;
     grid-template-columns: repeat(2, auto);
+    grid-row-gap: 15px;
+    grid-column-gap: 4vw;
 }
 
-.hobbies .text {
-    /* border: 2px solid blue; */
-}
+
+.hobbies .text {}
 
 #languages {
     grid-area: languages;
 }
 
 .languages div {
-    display: grid;
+    display: none;
+    padding: 25px 10vw;
     grid-template-columns: repeat(2, auto);
+    grid-row-gap: 15px;
+    grid-column-gap: 4vw;
 }
 
-.languages .text {
-    /* border: 2px solid blue; */
+
+.languages progress {
+    margin: 0 0 0 25px;
 }
 
 #profiles {
@@ -179,17 +353,94 @@ body {
 }
 
 .profiles div {
-    display: grid;
+    display: none;
+    padding: 25px 10vw;
     grid-template-columns: repeat(2, auto);
+    grid-row-gap: 15px;
+    grid-column-gap: 4vw;
 }
 
 .profiles a {
-    /* border: 2px solid blue; */
+    text-decoration: none;
+    color: black;
 }
 
-.content {
-    margin: 20px auto;
-    /* border: 2px solid green; */
-    text-align: center;
-    width: 100%;
+.profiles i,
+svg {
+    margin: 0 10px 0 0;
+    height: 24px;
+    width: 24px;
+}
+
+.profiles .fa-linkedin {
+    color: rgb(0, 119, 181);
+}
+
+.profiles .fa-github {
+    color: #171515;
+}
+
+.profiles .fa-twitter {
+    color: #1DA1F2;
+}
+
+.profiles .fa-instagram {
+    color: #C13584;
+}
+
+.profiles .fa-facebook {
+    color: #4267B2;
+}
+
+.profiles .iconify {
+    color: rgb(67, 67, 67);
+}
+
+.profiles .fa-youtube-play {
+    color: red;
+}
+
+@media only screen and (max-width: 700px) {
+    .nav {
+        display: none;
+    }
+
+    .heading {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .heading img {
+        display: block;
+        margin: auto;
+    }
+
+    .heading .top {
+        text-align: center;
+    }
+
+    .content div {
+        grid-template-columns: repeat(1, auto);
+    }
+
+    .certifications div,
+    .cocurriculars div {
+        grid-template-columns: repeat(2, auto);
+    }
+
+    .toggle-navbar {
+        display: none;
+    }
+
+    .content h1 {
+        top: 50px;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    .togglenav {
+        display: none;
+    }
 }

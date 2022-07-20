@@ -88,16 +88,10 @@ body {
     display: flex;
 }
 
-.left {
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-}
-
 .left img {
     height: 175px;
     width: 150px;
-    margin-left: 25px;
+    margin: 15px 0 0 40px;
     border-radius: 15px;
 }
 
@@ -240,6 +234,25 @@ hr {
 
 .trainings div {
     display: none;
+    padding-top: 25px;
+}
+
+.trainings img {
+    width: 30vw;
+    height: 25vw;
+    box-shadow: 0 0 10px rgba(0, 0, 0);
+    border-radius: 15px;
+}
+
+.trainings a {
+    text-decoration: none;
+}
+
+.trainings p {
+    font-size: 1.5vw;
+    margin-top: 10px;
+    font-weight: bold;
+    color: black;
 }
 
 #certifications {
@@ -446,6 +459,25 @@ svg {
     .certifications div {
         grid-column-gap: 5px;
         grid-row-gap: 10px;
+    }
+
+    .certifications img {
+        height: 120px;
+        width: 175px;
+    }
+
+    .cocurriculars img {
+        height: 120px;
+        width: 175px;
+    }
+
+    .trainings img {
+        width: 250px;
+        height: 200px;
+    }
+
+    .trainings p {
+        font-size: 12px;
     }
 }
 

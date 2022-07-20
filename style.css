@@ -437,6 +437,16 @@ svg {
     .content h1 {
         top: 50px;
     }
+
+    .cocurriculars div {
+        grid-column-gap: 20px;
+        grid-row-gap: 10px;
+    }
+
+    .certifications div {
+        grid-column-gap: 20px;
+        grid-row-gap: 10px;
+    }
 }
 
 @media only screen and (min-width: 700px) {

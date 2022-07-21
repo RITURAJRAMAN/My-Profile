@@ -1,2 +1,2 @@
 # My-Profile
-## Acess it from here: riturajraman.me
+## Acess it from here: http://riturajraman.me/

@@ -8,6 +8,8 @@ body {
     grid-template-areas: 'nav nav nav'
         'heading heading heading'
         'resume-part resume-part resume-part';
+    background-image: linear-gradient(rgb(62, 4, 110), rgb(209, 173, 216));
+
 }
 
 #nav {
@@ -104,15 +106,21 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: rgb(58, 239, 173);
 }
 
 .heading a {
     text-decoration: none;
-    color: black;
+    color: rgb(58, 239, 173);
 }
+
 
 hr {
     margin: 10px;
+}
+
+.heading .right .bottom {
+    color: rgb(58, 239, 173);
 }
 
 #resume-part {

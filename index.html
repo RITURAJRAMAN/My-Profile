@@ -3,398 +3,793 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Profile</title>
-    <link rel="shortcut icon" type="image/jpg" href="/favicon.jpg">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+    <title>Rituraj Raman — ML Engineer &amp; Developer</title>
+    <meta name="description"
+        content="Portfolio of Rituraj Raman — Machine Learning Engineer, Python Developer, and Frontend Developer. B.E. in CSE with AI/ML specialization.">
+    <link rel="shortcut icon" type="image/jpg" href="assets/images/favicon.jpg">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Phosphor Icons (modern icon set) -->
+    <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
 </head>
 
 <body>
-    <div class="nav" id="nav">
-        <div>
-            <ul class="navbar">
-                <li class="design"><a href="index.html">Summary</a></li>
-                <li class="design"><a href="#education">Education</a></li>
-                <li class="design"><a href="#skills">T. Skills</a></li>
-                <li class="design"><a href="#softskills">Soft Skills</a></li>
-                <li class="design"><a href="#projects">Projects</a></li>
-                <li class="design"><a href="#trainings">Trainings</a></li>
-                <li class="design"><a href="#certifications">Certifications</a></li>
-                <li class="design"><a href="#cocurriculars">Co-Curriculars</a></li>
-                <li class="design"><a href="#achievements">Achievements</a></li>
-                <li class="design"><a href="#hobbies">Hobbies</a></li>
-                <li class="design"><a href="#languages">Language</a></li>
-                <li class="design"><a href="#profiles">Social Profiles</a></li>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-glow"></div>
+
+    <!-- ======== NAVIGATION ======== -->
+    <nav class="nav" id="navbar">
+        <div class="container nav__inner">
+            <a href="#" class="nav__logo">R<span>.</span></a>
+            <ul class="nav__links" id="navLinks">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#activities">Activities</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
-        </div>
-    </div>
-    <div class="togglenav" id="nav">
-        <div>
-            <div class="togglebutton">
-                <i class="fa fa-bars" onclick="togglehide()"></i>
-            </div>
-            <ul class="toggle-navbar" id="toggle-navbar">
-                <li class="design"><a href="index.html">Summary</a></li>
-                <li class="design"><a href="#education">Education</a></li>
-                <li class="design"><a href="#skills">Technical Skills</a></li>
-                <li class="design"><a href="#softskills">Soft Skills</a></li>
-                <li class="design"><a href="#projects">Projects</a></li>
-                <li class="design"><a href="#trainings">Trainings</a></li>
-                <li class="design"><a href="#certifications">Certifications</a></li>
-                <li class="design"><a href="#cocurriculars">Co-Curriculars</a></li>
-                <li class="design"><a href="#achievements">Achievements</a></li>
-                <li class="design"><a href="#hobbies">Hobbies</a></li>
-                <li class="design"><a href="#languages">Language</a></li>
-                <li class="design"><a href="#profiles">Social Profiles</a></li>
-            </ul>
-        </div>
-    </div>
-    <div class="heading" id="heading">
-        <div class="left">
-            <img src="Rituraj.png" alt="profile">
-        </div>
-        <div class="right">
-            <div class="top">
-                <h1>RITURAJ RAMAN</h1>
-                <h3>Machine Learning | Frontend Web Developer | Python Programmer | C/C++ Programmer
-                </h3>
-                <h3><i class="fa fa-phone" style="font-size:22px"></i> +91 xxxxxx2829 | &nbsp;<i class="fa fa-envelope"
-                        style="font-size:20px">&nbsp;</i>
-                    <!-- <a href="mailto:riturajraman12345@gmail.com"> -->
-                    <a href="#">riturajramanxxxxx@gmail.com</a>
-                </h3>
-            </div>
-            <hr>
-            <div class="bottom">
-                <p>Effective Student committed to learning, developing skills in Programming and team contribution.
-                    Quick
-                    Learner, Self-directed and energetic with superior performance in both autonomous or
-                    collaborative environments working independently and collaborating with others on group
-                    projects.</p>
-                <p> Offers excellent organizational abilities along with computer knowledge, skill in MS Office and
-                    fluency
-                    in virtual work. Known for accomplishing objectives, best-in-class time management and eager to
-                    apply
-                    knowledge of project coordination and completion to achieve company goals. Dedicated to working
-                    hard to
-                    make positive contributions.</p>
+            <div class="nav__hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </div>
+    </nav>
+
+    <!-- Mobile Nav Overlay -->
+    <div class="nav__mobile" id="mobileNav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#activities">Activities</a>
+        <a href="#contact">Contact</a>
     </div>
 
-
-    <div class="resume-part" id="resume-part">
-        <div class="education content" id="education">
-            <h1>Education</h1>
-            <div>
-                <h2><i class="fa fa-circle" style="font-size:24px"></i>Bachelor of Engineering</h2>
-                <h3>Chandigarh University </h3>
-                <h4> Mohali, Punjab</h4>
-                <h4>2020 - 2024</h4>
-                <p>Currently pursuing Bachelor of Engineering in Computer Science and Engineering with
-                    specialization in
-                    Artificial Intelligence and Machine Learning in Association with IBM</p>
-                <h2><i class="fa fa-check-circle" style="font-size:24px"></i>All India Senior School Certificate
-                    Examination</h2>
-                <h3>JD Public school</h3>
-                <h4>Daudpur, Saran, Bihar</h4>
-                <h4>2018 - 2020</h4>
-                <h2><i class="fa fa-check-circle" style="font-size:24px"></i>All India Secondary School Examination
-                </h2>
-                <h3>ST Joseph Academy</h3>
-                <h4>Garkha, Saran, Bihar</h4>
-                <h4>2018</h4>
+    <!-- ======== HERO ======== -->
+    <section class="hero section" id="hero">
+        <canvas id="particleCanvas"></canvas>
+        <div class="hero__orb hero__orb--1"></div>
+        <div class="hero__orb hero__orb--2"></div>
+        <div class="hero__orb hero__orb--3"></div>
+        <div class="container hero__content">
+            <div class="hero__text">
+                <p class="hero__greeting">Hello, I'm</p>
+                <h1 class="hero__name">Rituraj <span class="highlight">Raman</span></h1>
+                <div class="hero__typing">
+                    <span id="typingText"></span><span class="cursor"></span>
+                </div>
+                <p class="hero__bio">
+                    Self-driven engineer with a passion for Machine Learning, full-stack development, and building
+                    intelligent systems. Quick learner who thrives in both autonomous and collaborative environments.
+                </p>
+                <div class="hero__actions">
+                    <a href="https://www.linkedin.com/in/riturajramann/" target="_blank"
+                        class="btn btn-primary btn-magnetic">
+                        <i class="ph ph-linkedin-logo"></i> LinkedIn
+                    </a>
+                    <a href="https://github.com/RITURAJRAMAN" target="_blank" class="btn btn-ghost btn-magnetic">
+                        <i class="ph ph-github-logo"></i> GitHub
+                    </a>
+                </div>
+            </div>
+            <div class="hero__image-wrapper">
+                <div class="hero__image-container">
+                    <div class="orbit-ring">
+                        <div class="orbit-dot"></div>
+                    </div>
+                    <div class="orbit-ring orbit-ring--2">
+                        <div class="orbit-dot"></div>
+                    </div>
+                    <div class="hero__particle"></div>
+                    <div class="hero__particle"></div>
+                    <div class="hero__particle"></div>
+                    <img src="assets/images/Rituraj.jpeg" alt="Rituraj Raman" class="hero__image">
+                </div>
             </div>
         </div>
+    </section>
 
-
-
-        <div class="skills content" id="skills">
-            <h1>Technical Skills</h1>
-            <div>
-                <p class="text">Machine Learning</p>
-                <p class="text">Python Programming</p>
-                <p class="text">HTML</p>
-                <p class="text">CSS</p>
-                <p class="text">Javascript</p>
-                <p class="text">Java Programming</p>
-                <p class="text">C/C++ Programming</p>
-                <p class="text">Computer Skills</p>
-                <p class="text">Google Tools</p>
-                <p class="text">MS Office</p>
+    <!-- ======== STATS BAR ======== -->
+    <section class="stats reveal" id="stats">
+        <div class="container">
+            <div class="stats__grid">
+                <div class="stat-item">
+                    <span class="stat-item__number" data-count="20" data-suffix="+">0</span>
+                    <span class="stat-item__label">Certifications</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-item__number" data-count="4">0</span>
+                    <span class="stat-item__label">Projects</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-item__number" data-count="12" data-suffix="+">0</span>
+                    <span class="stat-item__label">Activities</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-item__number" data-count="5" data-suffix="+">0</span>
+                    <span class="stat-item__label">Languages</span>
+                </div>
             </div>
         </div>
+    </section>
 
+    <!-- Section Divider -->
+    <div class="section-divider">
+        <svg viewBox="0 0 1440 60" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+            <path
+                d="M0 60L48 52C96 44 192 28 288 22C384 16 480 20 576 28C672 36 768 48 864 50C960 52 1056 44 1152 36C1248 28 1344 20 1392 16L1440 12V60H0Z"
+                fill="rgba(255,255,255,0.015)" />
+        </svg>
+    </div>
 
+    <!-- ======== ABOUT & EDUCATION ======== -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="reveal">
+                <span class="section-label">About Me</span>
+                <h2 class="section-title">Education & Background</h2>
+                <p class="section-subtitle">A dedicated engineer committed to continuous learning and building impactful
+                    solutions.</p>
+            </div>
 
-        <div class="softskills content" id="softskills">
-            <h1>Interpersonal skills</h1>
-            <div>
-                <p class="text">Quick Learner</p>
-                <p class="text">Problem Solver</p>
-                <p class="text">Time Management</p>
-                <p class="text">Leadership</p>
-                <p class="text">Responsible</p>
-                <p class="text">Sincere</p>
-                <p class="text">Self Confident</p>
-                <p class="text">Self Dependent</p>
-                <p class="text">Self Motivated</p>
-                <p class="text">Hard Work</p>
+            <div class="about__grid">
+                <div class="about__info reveal reveal-delay-1">
+                    <p>
+                        Effective student committed to developing skills in Programming and team contribution.
+                        Self-directed and energetic with superior performance in both autonomous and collaborative
+                        environments.
+                    </p>
+                    <p>
+                        Offers excellent organizational abilities along with strong computer knowledge.
+                        Known for best-in-class time management and eager to apply knowledge of project
+                        coordination and completion to achieve meaningful goals.
+                    </p>
+                    <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.5rem;">
+                        <span class="badge"><i class="ph ph-brain"></i> Quick Learner</span>
+                        <span class="badge"><i class="ph ph-lightning"></i> Problem Solver</span>
+                        <span class="badge"><i class="ph ph-clock"></i> Time Management</span>
+                        <span class="badge"><i class="ph ph-crown"></i> Leadership</span>
+                        <span class="badge"><i class="ph ph-fire"></i> Self Motivated</span>
+                        <span class="badge"><i class="ph ph-target"></i> Goal Oriented</span>
+                    </div>
+                </div>
 
+                <div class="timeline reveal reveal-delay-2">
+                    <div class="timeline__item">
+                        <span class="timeline__date">2020 — 2024</span>
+                        <h3 class="timeline__title">Bachelor of Engineering — CSE (AI & ML)</h3>
+                        <p class="timeline__school">Chandigarh University · In association with IBM</p>
+                        <p class="timeline__location">Mohali, Punjab</p>
+                    </div>
+                    <div class="timeline__item">
+                        <span class="timeline__date">2018 — 2020</span>
+                        <h3 class="timeline__title">Senior Secondary (AISSCE)</h3>
+                        <p class="timeline__school">JD Public School</p>
+                        <p class="timeline__location">Daudpur, Saran, Bihar</p>
+                    </div>
+                    <div class="timeline__item">
+                        <span class="timeline__date">2018</span>
+                        <h3 class="timeline__title">Secondary School (AISSE)</h3>
+                        <p class="timeline__school">ST Joseph Academy</p>
+                        <p class="timeline__location">Garkha, Saran, Bihar</p>
+                    </div>
+                </div>
             </div>
         </div>
+    </section>
 
+    <!-- ======== SKILLS ======== -->
+    <section class="section" id="skills">
+        <div class="container">
+            <div class="reveal">
+                <span class="section-label">Expertise</span>
+                <h2 class="section-title">Technical Skills</h2>
+            </div>
 
+            <div class="skills__wrapper">
+                <!-- AI / ML -->
+                <div class="skills__category reveal reveal-delay-1">
+                    <h3 class="skills__category-title">AI & Machine Learning</h3>
+                    <div class="skills__grid stagger-grid">
+                        <div class="skill-card">
+                            <div class="skill-card__icon"><i class="ph ph-brain"></i></div>
+                            <span class="skill-card__name">Machine Learning</span>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-card__icon"><i class="ph ph-chart-line-up"></i></div>
+                            <span class="skill-card__name">Data Science</span>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-card__icon"><i class="ph ph-robot"></i></div>
+                            <span class="skill-card__name">TensorFlow</span>
+                        </div>
+                    </div>
+                </div>
 
-        <div class="projects content" id="projects">
-            <h1>Projects</h1>
-            <div>
-                <!-- <div class="domain">Web Dev</div>
-                    <div class="domain">Machine Learning</div>
-                    <div class="domain">Python</div>
-                    <div class="domain">Java</div>
-                    <div class="domain">C/C++</div> -->
-                <p style="font-size: 25px; text-align: center; padding-top: 10px">Will be Updated Soon.</p>
+                <!-- Languages -->
+                <div class="skills__category reveal reveal-delay-2">
+                    <h3 class="skills__category-title">Programming Languages</h3>
+                    <div class="skills__grid">
+                        <div class="skill-card">
+                            <div class="skill-card__icon"><i class="ph ph-file-py"></i></div>
+                            <span class="skill-card__name">Python</span>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-card__icon"><i class="ph ph-code"></i></div>
+                            <span class="skill-card__name">C / C++</span>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-card__icon"><i class="ph ph-coffee"></i></div>
+                            <span class="skill-card__name">Java</span>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-card__icon"><i class="ph ph-file-js"></i></div>
+                            <span class="skill-card__name">JavaScript</span>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-card__icon"><i class="ph ph-chart-bar"></i></div>
+                            <span class="skill-card__name">R Programming</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Web Dev -->
+                <div class="skills__category reveal reveal-delay-3">
+                    <h3 class="skills__category-title">Web Development</h3>
+                    <div class="skills__grid">
+                        <div class="skill-card">
+                            <div class="skill-card__icon"><i class="ph ph-file-html"></i></div>
+                            <span class="skill-card__name">HTML5</span>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-card__icon"><i class="ph ph-file-css"></i></div>
+                            <span class="skill-card__name">CSS3</span>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-card__icon"><i class="ph ph-database"></i></div>
+                            <span class="skill-card__name">MySQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools -->
+                <div class="skills__category reveal reveal-delay-4">
+                    <h3 class="skills__category-title">Tools & Platforms</h3>
+                    <div class="skills__grid">
+                        <div class="skill-card">
+                            <div class="skill-card__icon"><i class="ph ph-git-branch"></i></div>
+                            <span class="skill-card__name">Git & GitHub</span>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-card__icon"><i class="ph ph-google-logo"></i></div>
+                            <span class="skill-card__name">Google Cloud</span>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-card__icon"><i class="ph ph-microsoft-teams-logo"></i></div>
+                            <span class="skill-card__name">MS Office</span>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-card__icon"><i class="ph ph-terminal"></i></div>
+                            <span class="skill-card__name">Linux / CLI</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+    </section>
 
+    <!-- ======== PROJECTS ======== -->
+    <section class="section" id="projects">
+        <div class="container">
+            <div class="reveal">
+                <span class="section-label">Portfolio</span>
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">A selection of things I've built and worked on.</p>
+            </div>
 
+            <div class="projects__grid stagger-grid">
+                <!-- Project 1 -->
+                <div class="project-card glass tilt-card reveal reveal-delay-1">
+                    <div class="card-glare"></div>
+                    <div class="project-card__header">
+                        <div class="project-card__icon"><i class="ph ph-brain"></i></div>
+                        <div class="project-card__links">
+                            <a href="https://github.com/RITURAJRAMAN" target="_blank" title="Source Code"><i
+                                    class="ph ph-github-logo"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="project-card__title">ML Model Training Pipeline</h3>
+                    <p class="project-card__desc">
+                        End-to-end machine learning pipeline for training language models locally with GPU acceleration,
+                        data pipeline management, and monitoring.
+                    </p>
+                    <div class="project-card__tags">
+                        <span class="badge badge--outline">Python</span>
+                        <span class="badge badge--outline">PyTorch</span>
+                        <span class="badge badge--outline">ML</span>
+                    </div>
+                </div>
 
-        <div class="trainings content" id="trainings">
-            <h1>Trainings</h1>
-            <div>
-                <a href="https://trainings.internshala.com/s/v/1699961/0ae48f6f" target="_blank" class="proofs">
-                    <img src="Certifications/Machine Learning Training - Internshala.jpg" alt="">
-                    <p>Machine Learning - Internshala Trainings</p>
-                </a>
+                <!-- Project 2 -->
+                <div class="project-card glass tilt-card reveal reveal-delay-2">
+                    <div class="card-glare"></div>
+                    <div class="project-card__header">
+                        <div class="project-card__icon"><i class="ph ph-calculator"></i></div>
+                        <div class="project-card__links">
+                            <a href="https://github.com/RITURAJRAMAN" target="_blank" title="Source Code"><i
+                                    class="ph ph-github-logo"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="project-card__title">Scientific Calculator</h3>
+                    <p class="project-card__desc">
+                        An advanced scientific calculator built with Python featuring complex mathematical operations,
+                        unit conversions, and a polished UI.
+                    </p>
+                    <div class="project-card__tags">
+                        <span class="badge badge--outline">Python</span>
+                        <span class="badge badge--outline">Tkinter</span>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card glass tilt-card reveal reveal-delay-3">
+                    <div class="card-glare"></div>
+                    <div class="project-card__header">
+                        <div class="project-card__icon"><i class="ph ph-translate"></i></div>
+                        <div class="project-card__links">
+                            <a href="https://github.com/RITURAJRAMAN" target="_blank" title="Source Code"><i
+                                    class="ph ph-github-logo"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="project-card__title">Language Translator</h3>
+                    <p class="project-card__desc">
+                        A language translation application built in Python supporting multiple languages with an
+                        intuitive interface and real-time translation.
+                    </p>
+                    <div class="project-card__tags">
+                        <span class="badge badge--outline">Python</span>
+                        <span class="badge badge--outline">NLP</span>
+                    </div>
+                </div>
+
+                <!-- Project 4 — Portfolio -->
+                <div class="project-card glass tilt-card reveal reveal-delay-4">
+                    <div class="card-glare"></div>
+                    <div class="project-card__header">
+                        <div class="project-card__icon"><i class="ph ph-globe"></i></div>
+                        <div class="project-card__links">
+                            <a href="https://github.com/RITURAJRAMAN/My-Profile" target="_blank" title="Source Code"><i
+                                    class="ph ph-github-logo"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="project-card__title">This Portfolio</h3>
+                    <p class="project-card__desc">
+                        A modern, dark-themed portfolio built with vanilla HTML, CSS & JavaScript — featuring
+                        glassmorphism, scroll animations, and a responsive layout.
+                    </p>
+                    <div class="project-card__tags">
+                        <span class="badge badge--outline">HTML</span>
+                        <span class="badge badge--outline">CSS</span>
+                        <span class="badge badge--outline">JavaScript</span>
+                    </div>
+                </div>
             </div>
         </div>
+    </section>
 
+    <!-- ======== CERTIFICATIONS ======== -->
+    <section class="section" id="certifications">
+        <div class="container">
+            <div class="reveal">
+                <span class="section-label">Credentials</span>
+                <h2 class="section-title">Certifications & Training</h2>
+            </div>
 
-
-        <div class="certifications content" id="certifications">
-            <h1>Certifications</h1>
-            <div>
-                <a href="Certifications/Introduction to python excellence cert.CN.png" target="_blank" class="proofs">
-                    <img src="Certifications/Introduction to python excellence cert.CN.png" alt="">
-                    <p>Introduction to python</p>
+            <div class="gallery__grid stagger-grid">
+                <a href="https://trainings.internshala.com/s/v/1699961/0ae48f6f" target="_blank"
+                    class="gallery-card glass reveal">
+                    <img src="assets/images/certifications/Machine Learning Training - Internshala.jpg"
+                        alt="ML Training" class="gallery-card__image">
+                    <div class="gallery-card__body">
+                        <h4 class="gallery-card__title">Machine Learning Training</h4>
+                        <p class="gallery-card__source">Internshala</p>
+                    </div>
                 </a>
-                <a href="Certifications/Basics of Data Structures and Algorithms in Python CN.jpg" target="_blank"
-                    class="proofs">
-                    <img src="Certifications/Basics of Data Structures and Algorithms in Python CN.jpg" alt="">
-                    <p>Basics of Data Structures and Algorithms in Python</p>
+                <a href="https://coursera.org/share/62ffcd1009afb402cc0ee724f45c33b4" target="_blank"
+                    class="gallery-card glass reveal">
+                    <img src="assets/images/certifications/Coursera Machine learning.jpg" alt="MLOps"
+                        class="gallery-card__image">
+                    <div class="gallery-card__body">
+                        <h4 class="gallery-card__title">MLOps Fundamentals</h4>
+                        <p class="gallery-card__source">Coursera</p>
+                    </div>
                 </a>
-                <a href="https://www.coursera.org/account/accomplishments/verify/PXAZN3MMHH9K?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=pdf_header_button&utm_product=course"
-                    target="_blank" class="proofs">
-                    <img src="Certifications/Coursera Machine learning with python.png" alt="">
-                    <p>Machine learning with Python</p>
+                <a href="https://www.coursera.org/account/accomplishments/verify/PXAZN3MMHH9K" target="_blank"
+                    class="gallery-card glass reveal">
+                    <img src="assets/images/certifications/Coursera Machine learning with python.png"
+                        alt="ML with Python" class="gallery-card__image">
+                    <div class="gallery-card__body">
+                        <h4 class="gallery-card__title">Machine Learning with Python</h4>
+                        <p class="gallery-card__source">Coursera</p>
+                    </div>
                 </a>
-                <a href="https://coursera.org/share/62ffcd1009afb402cc0ee724f45c33b4" target="_blank" class="proofs">
-                    <img src="Certifications/Coursera Machine learning.jpg" alt="">
-                    <p>MLOps Fundamentals</p>
+                <a href="https://coursera.org/share/9a3ea1be7d848549fdb954a57aebdcfe" target="_blank"
+                    class="gallery-card glass reveal">
+                    <img src="assets/images/certifications/Coursera programming for everybody(python).png"
+                        alt="Python for Everybody" class="gallery-card__image">
+                    <div class="gallery-card__body">
+                        <h4 class="gallery-card__title">Programming for Everybody</h4>
+                        <p class="gallery-card__source">Coursera · Python</p>
+                    </div>
                 </a>
-                <a href="https://coursera.org/share/9a3ea1be7d848549fdb954a57aebdcfe" target="_blank" class="proofs">
-                    <img src="Certifications/Coursera programming for everybody(python).png" alt="">
-                    <p>Programming for Everybody (Python)</p>
+                <a href="https://coursera.org/share/5c1498dd0e5fe8d83f4e9522eab0aa7d" target="_blank"
+                    class="gallery-card glass reveal">
+                    <img src="assets/images/certifications/Introductiontomachinelearning.jpg" alt="Intro to ML"
+                        class="gallery-card__image">
+                    <div class="gallery-card__body">
+                        <h4 class="gallery-card__title">Introduction to Machine Learning</h4>
+                        <p class="gallery-card__source">Coursera</p>
+                    </div>
                 </a>
-                <a href="https://coursera.org/share/5c1498dd0e5fe8d83f4e9522eab0aa7d" target="_blank" class="proofs">
-                    <img src="Certifications/Introductiontomachinelearning.jpg" alt="">
-                    <p>Introduction to Machine Learning</p>
+                <a href="assets/images/certifications/Introduction to python excellence cert.CN.png" target="_blank"
+                    class="gallery-card glass reveal">
+                    <img src="assets/images/certifications/Introduction to python excellence cert.CN.png"
+                        alt="Intro Python" class="gallery-card__image">
+                    <div class="gallery-card__body">
+                        <h4 class="gallery-card__title">Introduction to Python</h4>
+                        <p class="gallery-card__source">Coding Ninjas</p>
+                    </div>
                 </a>
-                <a href="https://coursera.org/share/f64f12f5e494b0c481f53288f932b162" target="_blank" class="proofs">
-                    <img src="Certifications/buildyourfirstandroidapp.jpg" alt="">
-                    <p>Build Your First Android App</p>
+                <a href="assets/images/certifications/Basics of Data Structures and Algorithms in Python CN.jpg"
+                    target="_blank" class="gallery-card glass reveal">
+                    <img src="assets/images/certifications/Basics of Data Structures and Algorithms in Python CN.jpg"
+                        alt="DSA Python" class="gallery-card__image">
+                    <div class="gallery-card__body">
+                        <h4 class="gallery-card__title">DSA in Python</h4>
+                        <p class="gallery-card__source">Coding Ninjas</p>
+                    </div>
                 </a>
-                <a href="https://coursera.org/share/e72200553225c1fcb0d44854c14d7920" target="_blank" class="proofs">
-                    <img src="Certifications/rprogramming.jpg" alt="">
-                    <p>R Programming</p>
+                <a href="https://coursera.org/share/f64f12f5e494b0c481f53288f932b162" target="_blank"
+                    class="gallery-card glass reveal">
+                    <img src="assets/images/certifications/buildyourfirstandroidapp.jpg" alt="Android"
+                        class="gallery-card__image">
+                    <div class="gallery-card__body">
+                        <h4 class="gallery-card__title">Build Your First Android App</h4>
+                        <p class="gallery-card__source">Coursera</p>
+                    </div>
                 </a>
-                <a href="https://coursera.org/share/91fb76d643927243d1cd4cdfb775b2da" target="_blank" class="proofs">
-                    <img src="Certifications/softwaresecurity.jpg" alt="">
-                    <p>Software Security</p>
+                <a href="https://coursera.org/share/e72200553225c1fcb0d44854c14d7920" target="_blank"
+                    class="gallery-card glass reveal">
+                    <img src="assets/images/certifications/rprogramming.jpg" alt="R Programming"
+                        class="gallery-card__image">
+                    <div class="gallery-card__body">
+                        <h4 class="gallery-card__title">R Programming</h4>
+                        <p class="gallery-card__source">Coursera</p>
+                    </div>
                 </a>
-                <a href="https://coursera.org/share/8815e315b241b068a5c88a80d5792e0f" target="_blank" class="proofs">
-                    <img src="Certifications/vmware.jpg" alt="">
-                    <p>Networking and Security Architecture with VMware</p>
+                <a href="https://coursera.org/share/91fb76d643927243d1cd4cdfb775b2da" target="_blank"
+                    class="gallery-card glass reveal">
+                    <img src="assets/images/certifications/softwaresecurity.jpg" alt="Software Security"
+                        class="gallery-card__image">
+                    <div class="gallery-card__body">
+                        <h4 class="gallery-card__title">Software Security</h4>
+                        <p class="gallery-card__source">Coursera</p>
+                    </div>
                 </a>
-                <a href="Certifications/cct.jpg" target="_blank" class="proofs">
-                    <img src="Certifications/cct.jpg" alt="">
-                    <p>Creativity and Critical Thinking</p>
+                <a href="https://coursera.org/share/8815e315b241b068a5c88a80d5792e0f" target="_blank"
+                    class="gallery-card glass reveal">
+                    <img src="assets/images/certifications/vmware.jpg" alt="VMware" class="gallery-card__image">
+                    <div class="gallery-card__body">
+                        <h4 class="gallery-card__title">Networking & Security with VMware</h4>
+                        <p class="gallery-card__source">Coursera</p>
+                    </div>
                 </a>
-                <a href="https://www.linkedin.com/learning/certificates/4f06d8c4f33b6c7e01c6d506ddd8219e1854a10be250ba3187bbb33690f83390?trk=share_certificate"
-                    target="_blank" class="proofs">
-                    <img src="Certifications/CertificateOfCompletion_Learning Java Linkedin.jpg" alt="">
-                    <p>Learning Java</p>
-                </a>
-                <a href="https://www.linkedin.com/learning/certificates/d92f8946e4ffa03e147902328e16be208ab91c9b594ea3c0466184268cc97957?trk=share_certificate"
-                    target="_blank" class="proofs">
-                    <img src="Certifications/mlinmobileapplication.jpg" alt="">
-                    <p>Machine learning in Mobile Application</p>
+                <a href="https://www.linkedin.com/learning/certificates/4f06d8c4f33b6c7e01c6d506ddd8219e1854a10be250ba3187bbb33690f83390"
+                    target="_blank" class="gallery-card glass reveal">
+                    <img src="assets/images/certifications/CertificateOfCompletion_Learning Java Linkedin.jpg"
+                        alt="Java" class="gallery-card__image">
+                    <div class="gallery-card__body">
+                        <h4 class="gallery-card__title">Learning Java</h4>
+                        <p class="gallery-card__source">LinkedIn Learning</p>
+                    </div>
                 </a>
                 <a href="https://courses.cognitiveclass.ai/certificates/861f350d4ecf44be91ab074012825e6c"
-                    target="_blank" class="proofs">
-                    <img src="Certifications/Game-playing AI with Swift for TensorFlow.jpg" alt="">
-                    <p>Game-playing AI with Swift for TensorFlow</p>
+                    target="_blank" class="gallery-card glass reveal">
+                    <img src="assets/images/certifications/Game-playing AI with Swift for TensorFlow.jpg" alt="Game AI"
+                        class="gallery-card__image">
+                    <div class="gallery-card__body">
+                        <h4 class="gallery-card__title">Game-playing AI with TensorFlow</h4>
+                        <p class="gallery-card__source">Cognitive Class</p>
+                    </div>
                 </a>
                 <a href="https://courses.cognitiveclass.ai/certificates/e9ff93d9ecb5409ea99289889e99f1a1"
-                    target="_blank" class="proofs">
-                    <img src="Certifications/Machine Learning with Python.jpg" alt="">
-                    <p>Machine Learning with Python</p>
+                    target="_blank" class="gallery-card glass reveal">
+                    <img src="assets/images/certifications/Machine Learning with Python.jpg" alt="ML Python"
+                        class="gallery-card__image">
+                    <div class="gallery-card__body">
+                        <h4 class="gallery-card__title">Machine Learning with Python</h4>
+                        <p class="gallery-card__source">Cognitive Class</p>
+                    </div>
                 </a>
-                <a href="Certifications/Microsoft AI classroom.png" target="_blank" class="proofs">
-                    <img src="Certifications/Microsoft AI classroom.png" alt="">
-                    <p>Microsoft AI Classroom Series</p>
+                <a href="assets/images/certifications/Microsoft AI classroom.png" target="_blank"
+                    class="gallery-card glass reveal">
+                    <img src="assets/images/certifications/Microsoft AI classroom.png" alt="Microsoft AI"
+                        class="gallery-card__image">
+                    <div class="gallery-card__body">
+                        <h4 class="gallery-card__title">Microsoft AI Classroom Series</h4>
+                        <p class="gallery-card__source">Microsoft</p>
+                    </div>
                 </a>
-                <a href="Certifications/Using MySQL Databases With Python.jpg" target="_blank" class="proofs">
-                    <img src="Certifications/Using MySQL Databases With Python.jpg" alt="">
-                    <p>Using MySQL Databases With Python</p>
+                <a href="assets/images/certifications/JP morgans.png" target="_blank" class="gallery-card glass reveal">
+                    <img src="assets/images/certifications/JP morgans.png" alt="JP Morgan" class="gallery-card__image">
+                    <div class="gallery-card__body">
+                        <h4 class="gallery-card__title">Software Engineering Virtual Experience</h4>
+                        <p class="gallery-card__source">J.P. Morgan</p>
+                    </div>
                 </a>
-                <a href="Certifications/JP morgans.png" target="_blank" class="proofs">
-                    <img src="Certifications/JP morgans.png" alt="">
-                    <p>Software Engineering Virtual Experience</p>
+                <a href="assets/images/certifications/Using MySQL Databases With Python.jpg" target="_blank"
+                    class="gallery-card glass reveal">
+                    <img src="assets/images/certifications/Using MySQL Databases With Python.jpg" alt="MySQL Python"
+                        class="gallery-card__image">
+                    <div class="gallery-card__body">
+                        <h4 class="gallery-card__title">MySQL Databases with Python</h4>
+                        <p class="gallery-card__source">Udemy</p>
+                    </div>
                 </a>
-                <a href="Certifications/scientificcalculatorcert.jpg" target="_blank" class="proofs">
-                    <img src="Certifications/scientificcalculator.jpg" alt="">
-                    <p>Scientific Calculator in Advanced python</p>
+                <a href="https://www.linkedin.com/learning/certificates/d92f8946e4ffa03e147902328e16be208ab91c9b594ea3c0466184268cc97957"
+                    target="_blank" class="gallery-card glass reveal">
+                    <img src="assets/images/certifications/mlinmobileapplication.jpg" alt="ML Mobile"
+                        class="gallery-card__image">
+                    <div class="gallery-card__body">
+                        <h4 class="gallery-card__title">ML in Mobile Applications</h4>
+                        <p class="gallery-card__source">LinkedIn Learning</p>
+                    </div>
                 </a>
-                <a href="Certifications/languagetranslatorcert.jpg" target="_blank" class="proofs">
-                    <img src="Certifications/languagetranslator.jpg" alt="">
-                    <p>language Translator in Advanced Python</p>
+                <a href="assets/images/certifications/cct.jpg" target="_blank" class="gallery-card glass reveal">
+                    <img src="assets/images/certifications/cct.jpg" alt="CCT" class="gallery-card__image">
+                    <div class="gallery-card__body">
+                        <h4 class="gallery-card__title">Creativity & Critical Thinking</h4>
+                        <p class="gallery-card__source">University Course</p>
+                    </div>
+                </a>
+                <a href="assets/images/certifications/scientificcalculatorcert.jpg" target="_blank"
+                    class="gallery-card glass reveal">
+                    <img src="assets/images/certifications/scientificcalculator.jpg" alt="Calculator"
+                        class="gallery-card__image">
+                    <div class="gallery-card__body">
+                        <h4 class="gallery-card__title">Scientific Calculator in Python</h4>
+                        <p class="gallery-card__source">Project Certification</p>
+                    </div>
+                </a>
+                <a href="assets/images/certifications/languagetranslatorcert.jpg" target="_blank"
+                    class="gallery-card glass reveal">
+                    <img src="assets/images/certifications/languagetranslator.jpg" alt="Translator"
+                        class="gallery-card__image">
+                    <div class="gallery-card__body">
+                        <h4 class="gallery-card__title">Language Translator in Python</h4>
+                        <p class="gallery-card__source">Project Certification</p>
+                    </div>
                 </a>
             </div>
         </div>
+    </section>
 
-
-
-        <div class="cocurriculars content" id="cocurriculars">
-            <h1>Co-Curricular Activities</h1>
-            <div>
-                <a href="CoCurriculars/CU FEST.jpg" target="_blank" class="proofs">
-                    <img src="CoCurriculars/CU FEST.jpg" alt="">
-                    <p>CU FEST</p>
-                </a>
-                <a href="CoCurriculars/GCRFP.png" target="_blank" class="proofs">
-                    <img src="CoCurriculars/GCRFP.png" alt="">
-                    <p>Google Cloud Ready Facilitator program</p>
-                </a>
-                <a href="CoCurriculars/L2E CDC.png" target="_blank" class="proofs">
-                    <img src="CoCurriculars/L2E CDC.png" alt="">
-                    <p>Learn to Earn Data Challenge</p>
-                </a>
-                <a href="CoCurriculars/L2E CSC.png" target="_blank" class="proofs">
-                    <img src="CoCurriculars/L2E CSC.png" alt="">
-                    <p>Learn to Earn Cloud Security Challenge</p>
-                </a>
-                <a href="CoCurriculars/30DoGC.jpg" target="_blank" class="proofs">
-                    <img src="CoCurriculars/30DoGC.jpg" alt="">
-                    <p>30 Days of Google Cloud</p>
-                </a>
-                <a href="CoCurriculars/DevFest.jpg" target="_blank" class="proofs">
-                    <img src="CoCurriculars/DevFest.jpg" alt="">
-                    <p>DevFest 2022</p>
-                </a>
-                <a href="CoCurriculars/Echakravyuh techinvent.png" target="_blank" class="proofs">
-                    <img src="CoCurriculars/Echakravyuh techinvent.png" alt="">
-                    <p>Echakravyuh Techinvent</p>
-                </a>
-                <a href="CoCurriculars/UI-UX TechInvent.png" target="_blank" class="proofs">
-                    <img src="CoCurriculars/UI-UX TechInvent.png" alt="">
-                    <p>UI-UX Techinvent</p>
-                </a>
-                <a href="CoCurriculars/Round Robin coding.png" target="_blank" class="proofs">
-                    <img src="CoCurriculars/Round Robin coding.png" alt="">
-                    <p>Round-Robin Coding Techinvent</p>
-                </a>
-                <a href="CoCurriculars/Think-Circuit techinvent.png" target="_blank" class="proofs">
-                    <img src="CoCurriculars/Think-Circuit techinvent.png" alt="">
-                    <p>Think-Circuit Techinvent</p>
-                </a>
-                <a href="CoCurriculars/Decodingbudget.jpg" target="_blank" class="proofs">
-                    <img src="CoCurriculars/Decodingbudget.jpg" alt="">
-                    <p>Decoding Budget - 2022</p>
-                </a>
-                <a href="CoCurriculars/WIEIEEE.png" target="_blank" class="proofs">
-                    <img src="CoCurriculars/WIEIEEE.png" alt="">
-                    <p>WIE IEEE CUSB</p>
-                </a>
-                <a href="CoCurriculars/covid19.jpg" target="_blank" class="proofs">
-                    <img src="CoCurriculars/covid.jpg" alt="">
-                    <p>C. of Dedication</p>
-                </a>
-
-
-            </div>
-        </div>
-
-
-
-        <div class="achievements content" id="achievements">
-            <h1>Achievements</h1>
-            <div>
-                <p style="font-size: 25px; text-align: center; padding-top: 10px">Will be Updating Soon.</p>
-            </div>
-        </div>
-
-
-
-        <div class="hobbies content" id="hobbies">
-            <h1>Hobbies</h1>
-            <div>
-                <p class="text">Tech Explorer</p>
-                <p class="text">Browsing Internet</p>
-                <p class="text">YouTube Creator</p>
-                <p class="text">Tech / Sci-fi Movies</p>
-            </div>
-        </div>
-
-
-
-        <div class="languages content" id="languages">
-            <h1>Languages</h1>
-            <div>
-                <p class="text">English<progress value="90" max="100"></progress></p>
-                <p class="text">Hindi<progress value="90" max="100"></progress></p>
-            </div>
-        </div>
-
-
-        <div class="profiles content" id="profiles">
-            <h1>Social Profiles</h1>
-            <div>
-                <a class="text" href="https://www.linkedin.com/in/riturajramann/" target="_blank"><i
-                        class="fa fa-linkedin" style="font-size:30px"></i>LinkedIn</a>
-                <a class="text" href="https://github.com/RITURAJRAMAN" target="_blank"><i class="fa fa-github"
-                        style="font-size:30px"></i>Github</a>
-                <a class="text" href="https://www.hackerrank.com/Rituraj_Raman" target="_blank"><i
-                        class=""></i>Hackerrank</a>
-                <a class="text"
-                    href="https://www.cloudskillsboost.google/public_profiles/df3526fa-1b6d-455c-973d-0d359abb6c9e"
-                    target="_blank"><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <title>Qwiklabs</title>
-                        <path
-                            d="M14.346 18.205A6.464 6.464 0 0 0 12 5.72a6.462 6.462 0 0 0-2.346 12.485.69.69 0 0 0 .961-.623v-5.4a1.385 1.385 0 1 1 2.77 0v5.4a.692.692 0 0 0 .961.623zm.809 5.558C20.252 22.378 24 17.718 24 12.182c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.536 3.748 10.196 8.845 11.581a.7.7 0 0 0 .049.013l.059.016.001-.002a1.385 1.385 0 0 0 .635-2.695 9.231 9.231 0 1 1 4.824-.001 1.385 1.385 0 0 0 .635 2.695l.001.002.059-.016.049-.013z" />
-                    </svg>Qwiklabs</a>
-                <a class="text" href="https://www.codechef.com/users/riturajraman1" target="_blank"><i
-                        class=""></i>Codechef</a>
-                <a class="text" href="https://www.hackerearth.com/@RITURAJ_RAMAN" target="_blank"><span class="iconify"
-                        data-icon="simple-icons:hackerearth"></span>Hackerearth</a>
-                <a class="text" href="https://twitter.com/RITURAJRAMAN123" target="_blank"><i class="fa fa-twitter"
-                        style="font-size:30px"></i>Twitter</a>
-                <a class="text" href="https://www.instagram.com/riturajraman_/" target="_blank"><i
-                        class="fa fa-instagram" style="font-size:30px"></i>Instagram</a>
-                <a class="text" href="https://www.facebook.com/riturajramansmart/" target="_blank"><i
-                        class='fa fa-facebook' style="font-size:30px"></i>Facebook</a>
-                <a class="text" href="https://www.youtube.com/channel/UCj1prnqkTBENhSSkvg6AFQA" target="_blank"><i
-                        class="fa fa-youtube-play" style="font-size:30px"></i>YouTube</a>
+    <!-- ======== CO-CURRICULAR ACTIVITIES ======== -->
+    <section class="section" id="activities">
+        <div class="container">
+            <div class="reveal">
+                <span class="section-label">Beyond Academics</span>
+                <h2 class="section-title">Co-Curricular Activities</h2>
             </div>
 
-
+            <div class="gallery__grid stagger-grid">
+                <div class="gallery-card glass reveal">
+                    <img src="assets/images/cocurriculars/CU FEST.jpg" alt="CU Fest" class="gallery-card__image">
+                    <div class="gallery-card__body">
+                        <h4 class="gallery-card__title">CU Fest</h4>
+                        <p class="gallery-card__source">Chandigarh University</p>
+                    </div>
+                </div>
+                <a href="assets/images/cocurriculars/GCRFP.png" target="_blank" class="gallery-card glass reveal">
+                    <img src="assets/images/cocurriculars/GCRFP.png" alt="GCRFP" class="gallery-card__image">
+                    <div class="gallery-card__body">
+                        <h4 class="gallery-card__title">Google Cloud Ready Facilitator</h4>
+                        <p class="gallery-card__source">Google Cloud</p>
+                    </div>
+                </a>
+                <a href="assets/images/cocurriculars/L2E CDC.png" target="_blank" class="gallery-card glass reveal">
+                    <img src="assets/images/cocurriculars/L2E CDC.png" alt="L2E Data" class="gallery-card__image">
+                    <div class="gallery-card__body">
+                        <h4 class="gallery-card__title">Learn to Earn Data Challenge</h4>
+                        <p class="gallery-card__source">Google Cloud</p>
+                    </div>
+                </a>
+                <a href="assets/images/cocurriculars/L2E CSC.png" target="_blank" class="gallery-card glass reveal">
+                    <img src="assets/images/cocurriculars/L2E CSC.png" alt="L2E Cloud" class="gallery-card__image">
+                    <div class="gallery-card__body">
+                        <h4 class="gallery-card__title">Learn to Earn Cloud Security</h4>
+                        <p class="gallery-card__source">Google Cloud</p>
+                    </div>
+                </a>
+                <a href="assets/images/cocurriculars/30DoGC.jpg" target="_blank" class="gallery-card glass reveal">
+                    <img src="assets/images/cocurriculars/30DoGC.jpg" alt="30DoGC" class="gallery-card__image">
+                    <div class="gallery-card__body">
+                        <h4 class="gallery-card__title">30 Days of Google Cloud</h4>
+                        <p class="gallery-card__source">Google Cloud</p>
+                    </div>
+                </a>
+                <a href="assets/images/cocurriculars/DevFest.jpg" target="_blank" class="gallery-card glass reveal">
+                    <img src="assets/images/cocurriculars/DevFest.jpg" alt="DevFest" class="gallery-card__image">
+                    <div class="gallery-card__body">
+                        <h4 class="gallery-card__title">DevFest 2022</h4>
+                        <p class="gallery-card__source">Google Developer Groups</p>
+                    </div>
+                </a>
+                <a href="assets/images/cocurriculars/Echakravyuh techinvent.png" target="_blank"
+                    class="gallery-card glass reveal">
+                    <img src="assets/images/cocurriculars/Echakravyuh techinvent.png" alt="Echakravyuh"
+                        class="gallery-card__image">
+                    <div class="gallery-card__body">
+                        <h4 class="gallery-card__title">Echakravyuh — TechInvent</h4>
+                        <p class="gallery-card__source">Technical Event</p>
+                    </div>
+                </a>
+                <a href="assets/images/cocurriculars/UI-UX TechInvent.png" target="_blank"
+                    class="gallery-card glass reveal">
+                    <img src="assets/images/cocurriculars/UI-UX TechInvent.png" alt="UI-UX" class="gallery-card__image">
+                    <div class="gallery-card__body">
+                        <h4 class="gallery-card__title">UI/UX — TechInvent</h4>
+                        <p class="gallery-card__source">Design Competition</p>
+                    </div>
+                </a>
+                <a href="assets/images/cocurriculars/Round Robin coding.png" target="_blank"
+                    class="gallery-card glass reveal">
+                    <img src="assets/images/cocurriculars/Round Robin coding.png" alt="Round Robin"
+                        class="gallery-card__image">
+                    <div class="gallery-card__body">
+                        <h4 class="gallery-card__title">Round-Robin Coding</h4>
+                        <p class="gallery-card__source">TechInvent</p>
+                    </div>
+                </a>
+                <a href="assets/images/cocurriculars/Think-Circuit techinvent.png" target="_blank"
+                    class="gallery-card glass reveal">
+                    <img src="assets/images/cocurriculars/Think-Circuit techinvent.png" alt="Think Circuit"
+                        class="gallery-card__image">
+                    <div class="gallery-card__body">
+                        <h4 class="gallery-card__title">Think-Circuit</h4>
+                        <p class="gallery-card__source">TechInvent</p>
+                    </div>
+                </a>
+                <a href="assets/images/cocurriculars/Decodingbudget.jpg" target="_blank"
+                    class="gallery-card glass reveal">
+                    <img src="assets/images/cocurriculars/Decodingbudget.jpg" alt="Budget" class="gallery-card__image">
+                    <div class="gallery-card__body">
+                        <h4 class="gallery-card__title">Decoding Budget 2022</h4>
+                        <p class="gallery-card__source">Finance Event</p>
+                    </div>
+                </a>
+                <a href="assets/images/cocurriculars/WIEIEEE.png" target="_blank" class="gallery-card glass reveal">
+                    <img src="assets/images/cocurriculars/WIEIEEE.png" alt="WIE IEEE" class="gallery-card__image">
+                    <div class="gallery-card__body">
+                        <h4 class="gallery-card__title">WIE IEEE CUSB</h4>
+                        <p class="gallery-card__source">IEEE Women in Engineering</p>
+                    </div>
+                </a>
+            </div>
         </div>
-    </div>
-    <script src="javascript.js"></script>
+    </section>
+
+    <!-- ======== CONTACT / SOCIAL ======== -->
+    <section class="section" id="contact">
+        <div class="container">
+            <div class="reveal">
+                <span class="section-label">Get in Touch</span>
+                <h2 class="section-title">Connect with Me</h2>
+                <p class="section-subtitle">Feel free to reach out through any of these platforms.</p>
+            </div>
+
+            <div class="contact__grid">
+                <a href="https://www.linkedin.com/in/riturajramann/" target="_blank"
+                    class="contact-card glass social--linkedin reveal">
+                    <div class="contact-card__icon"><i class="ph ph-linkedin-logo"></i></div>
+                    <div class="contact-card__info">
+                        <h4>LinkedIn</h4>
+                        <p>riturajramann</p>
+                    </div>
+                </a>
+                <a href="https://github.com/RITURAJRAMAN" target="_blank"
+                    class="contact-card glass social--github reveal">
+                    <div class="contact-card__icon"><i class="ph ph-github-logo"></i></div>
+                    <div class="contact-card__info">
+                        <h4>GitHub</h4>
+                        <p>RITURAJRAMAN</p>
+                    </div>
+                </a>
+                <a href="https://www.hackerrank.com/Rituraj_Raman" target="_blank"
+                    class="contact-card glass social--hackerrank reveal">
+                    <div class="contact-card__icon"><i class="ph ph-code"></i></div>
+                    <div class="contact-card__info">
+                        <h4>HackerRank</h4>
+                        <p>Rituraj_Raman</p>
+                    </div>
+                </a>
+                <a href="https://www.codechef.com/users/riturajraman1" target="_blank"
+                    class="contact-card glass social--codechef reveal">
+                    <div class="contact-card__icon"><i class="ph ph-chef-hat"></i></div>
+                    <div class="contact-card__info">
+                        <h4>CodeChef</h4>
+                        <p>riturajraman1</p>
+                    </div>
+                </a>
+                <a href="https://www.hackerearth.com/@RITURAJ_RAMAN" target="_blank"
+                    class="contact-card glass social--hackerearth reveal">
+                    <div class="contact-card__icon"><i class="ph ph-planet"></i></div>
+                    <div class="contact-card__info">
+                        <h4>HackerEarth</h4>
+                        <p>RITURAJ_RAMAN</p>
+                    </div>
+                </a>
+                <a href="https://www.cloudskillsboost.google/public_profiles/df3526fa-1b6d-455c-973d-0d359abb6c9e"
+                    target="_blank" class="contact-card glass social--qwiklabs reveal">
+                    <div class="contact-card__icon"><i class="ph ph-cloud"></i></div>
+                    <div class="contact-card__info">
+                        <h4>Google Cloud Skills</h4>
+                        <p>Cloud Skills Boost</p>
+                    </div>
+                </a>
+                <a href="https://twitter.com/RITURAJRAMAN123" target="_blank"
+                    class="contact-card glass social--twitter reveal">
+                    <div class="contact-card__icon"><i class="ph ph-twitter-logo"></i></div>
+                    <div class="contact-card__info">
+                        <h4>Twitter</h4>
+                        <p>@RITURAJRAMAN123</p>
+                    </div>
+                </a>
+                <a href="https://www.instagram.com/riturajraman_/" target="_blank"
+                    class="contact-card glass social--instagram reveal">
+                    <div class="contact-card__icon"><i class="ph ph-instagram-logo"></i></div>
+                    <div class="contact-card__info">
+                        <h4>Instagram</h4>
+                        <p>riturajraman_</p>
+                    </div>
+                </a>
+                <a href="https://www.facebook.com/riturajramansmart/" target="_blank"
+                    class="contact-card glass social--facebook reveal">
+                    <div class="contact-card__icon"><i class="ph ph-facebook-logo"></i></div>
+                    <div class="contact-card__info">
+                        <h4>Facebook</h4>
+                        <p>riturajramansmart</p>
+                    </div>
+                </a>
+                <a href="https://www.youtube.com/channel/UCj1prnqkTBENhSSkvg6AFQA" target="_blank"
+                    class="contact-card glass social--youtube reveal">
+                    <div class="contact-card__icon"><i class="ph ph-youtube-logo"></i></div>
+                    <div class="contact-card__info">
+                        <h4>YouTube</h4>
+                        <p>Tech Channel</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======== FOOTER ======== -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Rituraj <span>Raman</span>. Designed with purpose.</p>
+        </div>
+    </footer>
+
+    <!-- Back to top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="ph ph-arrow-up"></i>
+    </button>
+
+    <script src="js/main.js"></script>
 </body>
 
 </html>

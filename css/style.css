@@ -1385,6 +1385,42 @@ ul {
 }
 
 /* ============================================================
+   COLLAPSIBLE CERTIFICATIONS
+   ============================================================ */
+.cert-hidden {
+  display: none !important;
+  opacity: 0;
+}
+
+.gallery-action {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.gallery-action .btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.8rem 2rem;
+  border-radius: 50px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: var(--text-primary);
+  font-weight: 500;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-action .btn:hover {
+  background: rgba(240, 165, 0, 0.1);
+  border-color: rgba(240, 165, 0, 0.3);
+  color: var(--accent);
+  box-shadow: 0 8px 25px rgba(240, 165, 0, 0.15);
+}
+
+/* ============================================================
    SCROLL REVEAL ANIMATIONS
    ============================================================ */
 .reveal {

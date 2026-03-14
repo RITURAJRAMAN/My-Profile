@@ -228,11 +228,10 @@ document.addEventListener('DOMContentLoaded', () => {
   // ──────────────────────────────────────────────
   const typingEl = document.getElementById('typingText');
   const roles = [
+    'AI Engineer',
     'Machine Learning Engineer',
     'Python Developer',
-    'Frontend Web Developer',
-    'AI Enthusiast',
-    'Problem Solver'
+    'FullStack Developer'
   ];
   let roleIndex = 0;
   let charIndex = 0;
@@ -448,5 +447,79 @@ document.addEventListener('DOMContentLoaded', () => {
       card.style.transform = '';
     });
   });
+
+  // ──────────────────────────────────────────────
+  //  16. DYNAMIC SINGLE ROW COLLAPSIBLE GALLERIES
+  // ──────────────────────────────────────────────
+  function initCollapsibleGallery(sectionId, btnId, btnTextFormat) {
+    const toggleBtn = document.getElementById(btnId);
+    const grid = document.querySelector(`${sectionId} .gallery__grid`);
+
+    if (!toggleBtn || !grid) return;
+
+    const cards = Array.from(grid.querySelectorAll('.gallery-card'));
+    if (cards.length <= 1) {
+      toggleBtn.parentElement.style.display = 'none';
+      return;
+    }
+
+    let isExpanded = false;
+    let visibleCount = 1;
+
+    function calculateFirstRow() {
+      if (isExpanded) return;
+
+      cards.forEach(c => c.classList.remove('cert-hidden'));
+      visibleCount = 1;
+
+      for (let i = 1; i < cards.length; i++) {
+        if (cards[i].offsetLeft > cards[i - 1].offsetLeft) {
+          visibleCount++;
+        } else {
+          break;
+        }
+      }
+
+      if (visibleCount >= cards.length) {
+        toggleBtn.parentElement.style.display = 'none';
+      } else {
+        toggleBtn.parentElement.style.display = 'flex';
+        cards.forEach((card, index) => {
+          if (index >= visibleCount) {
+            card.classList.add('cert-hidden');
+          }
+        });
+      }
+    }
+
+    window.addEventListener('load', calculateFirstRow);
+    if (document.readyState === 'complete') calculateFirstRow();
+    window.addEventListener('resize', calculateFirstRow);
+
+    toggleBtn.addEventListener('click', () => {
+      isExpanded = !isExpanded;
+      const btnText = toggleBtn.querySelector('span');
+      const btnIcon = toggleBtn.querySelector('i');
+
+      if (isExpanded) {
+        cards.forEach(card => card.classList.remove('cert-hidden'));
+        btnText.textContent = 'Show Less';
+        btnIcon.style.transform = 'rotate(180deg)';
+      } else {
+        cards.forEach((card, index) => {
+          if (index >= visibleCount) {
+            card.classList.add('cert-hidden');
+            card.classList.remove('stagger-active');
+          }
+        });
+        btnText.textContent = btnTextFormat;
+        btnIcon.style.transform = 'rotate(0deg)';
+        document.querySelector(sectionId).scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  }
+
+  initCollapsibleGallery('#certifications', 'toggleCertifications', 'Show All Credentials');
+  initCollapsibleGallery('#activities', 'toggleActivities', 'Show All Activities');
 
 });

@@ -22,7 +22,7 @@
     <!-- ======== NAVIGATION ======== -->
     <nav class="nav" id="navbar">
         <div class="container nav__inner">
-            <a href="#" class="nav__logo">R<span>.</span></a>
+            <a href="#" class="nav__logo">RR<span>.</span></a>
             <ul class="nav__links" id="navLinks">
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
@@ -63,8 +63,8 @@
                     <span id="typingText"></span><span class="cursor"></span>
                 </div>
                 <p class="hero__bio">
-                    Self-driven engineer with a passion for Machine Learning, full-stack development, and building
-                    intelligent systems. Quick learner who thrives in both autonomous and collaborative environments.
+                    Innovative AI/Machine Learning Engineer specializing in Generative AI, LLM agents (LangChain), and
+                    RAG architectures. Currently building scalable AI solutions at Evalueserve.
                 </p>
                 <div class="hero__actions">
                     <a href="https://www.linkedin.com/in/riturajramann/" target="_blank"
@@ -102,7 +102,7 @@
                     <span class="stat-item__label">Certifications</span>
                 </div>
                 <div class="stat-item">
-                    <span class="stat-item__number" data-count="4">0</span>
+                    <span class="stat-item__number" data-count="10" data-suffix="+">0</span>
                     <span class="stat-item__label">Projects</span>
                 </div>
                 <div class="stat-item">
@@ -137,28 +137,36 @@
             </div>
 
             <div class="about__grid">
-                <div class="about__info reveal reveal-delay-1">
-                    <p>
-                        Effective student committed to developing skills in Programming and team contribution.
-                        Self-directed and energetic with superior performance in both autonomous and collaborative
-                        environments.
-                    </p>
-                    <p>
-                        Offers excellent organizational abilities along with strong computer knowledge.
-                        Known for best-in-class time management and eager to apply knowledge of project
-                        coordination and completion to achieve meaningful goals.
-                    </p>
-                    <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.5rem;">
-                        <span class="badge"><i class="ph ph-brain"></i> Quick Learner</span>
-                        <span class="badge"><i class="ph ph-lightning"></i> Problem Solver</span>
-                        <span class="badge"><i class="ph ph-clock"></i> Time Management</span>
-                        <span class="badge"><i class="ph ph-crown"></i> Leadership</span>
-                        <span class="badge"><i class="ph ph-fire"></i> Self Motivated</span>
-                        <span class="badge"><i class="ph ph-target"></i> Goal Oriented</span>
+                <!-- Professional Experience Column -->
+                <div class="timeline reveal reveal-delay-1">
+                    <h3 class="skills__category-title" style="margin-bottom: 2rem;">Professional Experience</h3>
+
+                    <div class="timeline__item">
+                        <span class="timeline__date">August 2024 — Present</span>
+                        <h3 class="timeline__title">Junior Software Engineer</h3>
+                        <p class="timeline__school">Evalueserve.com Pvt. Ltd. · Gurugram</p>
+                        <p class="timeline__location" style="margin-top: 0.5rem; color: var(--text-primary);">
+                            • Architected Advanced RAG AI Agent and custom LLM Adapters.<br>
+                            • Modernized ML workflows by integrating GenAI features.<br>
+                            • Enhanced GenAI Bot ecosystem and resolved 40+ critical bugs.
+                        </p>
+                    </div>
+
+                    <div class="timeline__item">
+                        <span class="timeline__date">February 2024 — July 2024</span>
+                        <h3 class="timeline__title">Machine Learning Intern</h3>
+                        <p class="timeline__school">Evalueserve.com Pvt. Ltd. · Gurugram</p>
+                        <p class="timeline__location" style="margin-top: 0.5rem; color: var(--text-primary);">
+                            • Optimized GenAI Chatbot performance by up to 30%.<br>
+                            • Refactored code to reduce latency and integrate new GenAI capabilities.<br>
+                            • Resolved 15+ critical system bugs.
+                        </p>
                     </div>
                 </div>
 
+                <!-- Education Column -->
                 <div class="timeline reveal reveal-delay-2">
+                    <h3 class="skills__category-title" style="margin-bottom: 2rem;">Education & Background</h3>
                     <div class="timeline__item">
                         <span class="timeline__date">2020 — 2024</span>
                         <h3 class="timeline__title">Bachelor of Engineering — CSE (AI & ML)</h3>
@@ -191,32 +199,67 @@
             </div>
 
             <div class="skills__wrapper">
-                <!-- AI / ML -->
+                <!-- GenAI & LLM -->
                 <div class="skills__category reveal reveal-delay-1">
-                    <h3 class="skills__category-title">AI & Machine Learning</h3>
+                    <h3 class="skills__category-title">Generative AI & LLMs</h3>
                     <div class="skills__grid stagger-grid">
+                        <div class="skill-card">
+                            <div class="skill-card__icon"><i class="ph ph-robot"></i></div>
+                            <span class="skill-card__name">LangChain</span>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-card__icon"><i class="ph ph-brain"></i></div>
+                            <span class="skill-card__name">RAG Architectures</span>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-card__icon"><i class="ph ph-robot"></i></div>
+                            <span class="skill-card__name">AI Agents</span>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-card__icon"><i class="ph ph-sparkle"></i></div>
+                            <span class="skill-card__name">LLM Fine-tuning</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AI / ML -->
+                <div class="skills__category reveal reveal-delay-2">
+                    <h3 class="skills__category-title">Data Science & ML</h3>
+                    <div class="skills__grid stagger-grid">
+                        <div class="skill-card">
+                            <div class="skill-card__icon"><i class="ph ph-brain"></i></div>
+                            <span class="skill-card__name">Deep Learning</span>
+                        </div>
                         <div class="skill-card">
                             <div class="skill-card__icon"><i class="ph ph-brain"></i></div>
                             <span class="skill-card__name">Machine Learning</span>
                         </div>
                         <div class="skill-card">
-                            <div class="skill-card__icon"><i class="ph ph-chart-line-up"></i></div>
-                            <span class="skill-card__name">Data Science</span>
+                            <div class="skill-card__icon"><i class="ph ph-hexagon"></i></div>
+                            <span class="skill-card__name">TensorFlow</span>
                         </div>
                         <div class="skill-card">
-                            <div class="skill-card__icon"><i class="ph ph-robot"></i></div>
-                            <span class="skill-card__name">TensorFlow</span>
+                            <div class="skill-card__icon"><i class="ph ph-chart-line-up"></i></div>
+                            <span class="skill-card__name">Scikit-learn</span>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-card__icon"><i class="ph ph-database"></i></div>
+                            <span class="skill-card__name">NLP</span>
                         </div>
                     </div>
                 </div>
 
                 <!-- Languages -->
-                <div class="skills__category reveal reveal-delay-2">
-                    <h3 class="skills__category-title">Programming Languages</h3>
-                    <div class="skills__grid">
+                <div class="skills__category reveal reveal-delay-3">
+                    <h3 class="skills__category-title">Languages</h3>
+                    <div class="skills__grid stagger-grid">
                         <div class="skill-card">
                             <div class="skill-card__icon"><i class="ph ph-file-py"></i></div>
                             <span class="skill-card__name">Python</span>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-card__icon"><i class="ph ph-file-js"></i></div>
+                            <span class="skill-card__name">TypeScript</span>
                         </div>
                         <div class="skill-card">
                             <div class="skill-card__icon"><i class="ph ph-code"></i></div>
@@ -226,21 +269,13 @@
                             <div class="skill-card__icon"><i class="ph ph-coffee"></i></div>
                             <span class="skill-card__name">Java</span>
                         </div>
-                        <div class="skill-card">
-                            <div class="skill-card__icon"><i class="ph ph-file-js"></i></div>
-                            <span class="skill-card__name">JavaScript</span>
-                        </div>
-                        <div class="skill-card">
-                            <div class="skill-card__icon"><i class="ph ph-chart-bar"></i></div>
-                            <span class="skill-card__name">R Programming</span>
-                        </div>
                     </div>
                 </div>
 
                 <!-- Web Dev -->
-                <div class="skills__category reveal reveal-delay-3">
-                    <h3 class="skills__category-title">Web Development</h3>
-                    <div class="skills__grid">
+                <div class="skills__category reveal reveal-delay-4">
+                    <h3 class="skills__category-title">Web & Frameworks</h3>
+                    <div class="skills__grid stagger-grid">
                         <div class="skill-card">
                             <div class="skill-card__icon"><i class="ph ph-file-html"></i></div>
                             <span class="skill-card__name">HTML5</span>
@@ -250,31 +285,47 @@
                             <span class="skill-card__name">CSS3</span>
                         </div>
                         <div class="skill-card">
-                            <div class="skill-card__icon"><i class="ph ph-database"></i></div>
-                            <span class="skill-card__name">MySQL</span>
+                            <div class="skill-card__icon"><i class="ph ph-file-js"></i></div>
+                            <span class="skill-card__name">JavaScript</span>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-card__icon"><i class="ph ph-atom"></i></div>
+                            <span class="skill-card__name">React</span>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-card__icon"><i class="ph ph-shield-check"></i></div>
+                            <span class="skill-card__name">Angular</span>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-card__icon"><i class="ph ph-fire"></i></div>
+                            <span class="skill-card__name">Django</span>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-card__icon"><i class="ph ph-windows-logo"></i></div>
+                            <span class="skill-card__name">.NET Backend</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- Tools -->
-                <div class="skills__category reveal reveal-delay-4">
-                    <h3 class="skills__category-title">Tools & Platforms</h3>
-                    <div class="skills__grid">
-                        <div class="skill-card">
-                            <div class="skill-card__icon"><i class="ph ph-git-branch"></i></div>
-                            <span class="skill-card__name">Git & GitHub</span>
-                        </div>
+                <!-- Cloud & Tools -->
+                <div class="skills__category reveal reveal-delay-1">
+                    <h3 class="skills__category-title">Cloud & Tools</h3>
+                    <div class="skills__grid stagger-grid">
                         <div class="skill-card">
                             <div class="skill-card__icon"><i class="ph ph-google-logo"></i></div>
                             <span class="skill-card__name">Google Cloud</span>
                         </div>
                         <div class="skill-card">
-                            <div class="skill-card__icon"><i class="ph ph-microsoft-teams-logo"></i></div>
-                            <span class="skill-card__name">MS Office</span>
+                            <div class="skill-card__icon"><i class="ph ph-cloud"></i></div>
+                            <span class="skill-card__name">Microsoft Azure</span>
                         </div>
                         <div class="skill-card">
-                            <div class="skill-card__icon"><i class="ph ph-terminal"></i></div>
-                            <span class="skill-card__name">Linux / CLI</span>
+                            <div class="skill-card__icon"><i class="ph ph-git-branch"></i></div>
+                            <span class="skill-card__name">Git & GitHub</span>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-card__icon"><i class="ph ph-robot"></i></div>
+                            <span class="skill-card__name">MS Copilot Studio</span>
                         </div>
                     </div>
                 </div>
@@ -292,89 +343,110 @@
             </div>
 
             <div class="projects__grid stagger-grid">
-                <!-- Project 1 -->
+                <!-- Project 1: NeoLLM -->
                 <div class="project-card glass tilt-card reveal reveal-delay-1">
                     <div class="card-glare"></div>
                     <div class="project-card__header">
                         <div class="project-card__icon"><i class="ph ph-brain"></i></div>
                         <div class="project-card__links">
-                            <a href="https://github.com/RITURAJRAMAN" target="_blank" title="Source Code"><i
+                            <a href="https://github.com/RITURAJRAMAN/NeoLLM" target="_blank" title="Source Code"><i
                                     class="ph ph-github-logo"></i></a>
                         </div>
                     </div>
-                    <h3 class="project-card__title">ML Model Training Pipeline</h3>
+                    <h3 class="project-card__title">NeoLLM Pipeline</h3>
                     <p class="project-card__desc">
-                        End-to-end machine learning pipeline for training language models locally with GPU acceleration,
-                        data pipeline management, and monitoring.
+                        End-to-end local training pipeline for Small and Medium Language Models (125M & 370M parameters)
+                        with a custom GPT architecture.
                     </p>
                     <div class="project-card__tags">
                         <span class="badge badge--outline">Python</span>
                         <span class="badge badge--outline">PyTorch</span>
-                        <span class="badge badge--outline">ML</span>
+                        <span class="badge badge--outline">LLMs</span>
                     </div>
                 </div>
 
-                <!-- Project 2 -->
+                <!-- Project 2: RAG AI Agent -->
                 <div class="project-card glass tilt-card reveal reveal-delay-2">
                     <div class="card-glare"></div>
                     <div class="project-card__header">
-                        <div class="project-card__icon"><i class="ph ph-calculator"></i></div>
+                        <div class="project-card__icon"><i class="ph ph-robot"></i></div>
                         <div class="project-card__links">
                             <a href="https://github.com/RITURAJRAMAN" target="_blank" title="Source Code"><i
                                     class="ph ph-github-logo"></i></a>
                         </div>
                     </div>
-                    <h3 class="project-card__title">Scientific Calculator</h3>
+                    <h3 class="project-card__title">Advanced RAG AI Agent</h3>
                     <p class="project-card__desc">
-                        An advanced scientific calculator built with Python featuring complex mathematical operations,
-                        unit conversions, and a polished UI.
+                        Developed a custom LLM Adapter and RAG pipeline at Evalueserve to significantly enhance
+                        retrieval accuracy and interoperability.
                     </p>
                     <div class="project-card__tags">
+                        <span class="badge badge--outline">LangChain</span>
                         <span class="badge badge--outline">Python</span>
-                        <span class="badge badge--outline">Tkinter</span>
+                        <span class="badge badge--outline">GenAI</span>
                     </div>
                 </div>
 
-                <!-- Project 3 -->
+                <!-- Project 3: Ecommerce -->
                 <div class="project-card glass tilt-card reveal reveal-delay-3">
                     <div class="card-glare"></div>
                     <div class="project-card__header">
-                        <div class="project-card__icon"><i class="ph ph-translate"></i></div>
+                        <div class="project-card__icon"><i class="ph ph-shopping-cart"></i></div>
                         <div class="project-card__links">
-                            <a href="https://github.com/RITURAJRAMAN" target="_blank" title="Source Code"><i
-                                    class="ph ph-github-logo"></i></a>
+                            <a href="https://github.com/RITURAJRAMAN/.NET_API-E_Commerce" target="_blank"
+                                title="Source Code"><i class="ph ph-github-logo"></i></a>
                         </div>
                     </div>
-                    <h3 class="project-card__title">Language Translator</h3>
+                    <h3 class="project-card__title">Ecommerce Web App</h3>
                     <p class="project-card__desc">
-                        A language translation application built in Python supporting multiple languages with an
-                        intuitive interface and real-time translation.
+                        Decoupled system with interchangeable Angular/React frontends and Django/.NET API backends
+                        featuring a collaborative filtering engine.
                     </p>
                     <div class="project-card__tags">
-                        <span class="badge badge--outline">Python</span>
+                        <span class="badge badge--outline">React / Angular</span>
+                        <span class="badge badge--outline">Django / .NET</span>
+                    </div>
+                </div>
+
+                <!-- Project 4: Movie Rec -->
+                <div class="project-card glass tilt-card reveal reveal-delay-4">
+                    <div class="card-glare"></div>
+                    <div class="project-card__header">
+                        <div class="project-card__icon"><i class="ph ph-film-strip"></i></div>
+                        <div class="project-card__links">
+                            <a href="https://github.com/RITURAJRAMAN/Movie_Recommendation_System" target="_blank"
+                                title="Source Code"><i class="ph ph-github-logo"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="project-card__title">Movie Recommendation</h3>
+                    <p class="project-card__desc">
+                        Built a content-based filtering engine using Cosine Similarity and TF-IDF vectorization to
+                        generate highly personalized movie suggestions.
+                    </p>
+                    <div class="project-card__tags">
+                        <span class="badge badge--outline">Machine Learning</span>
                         <span class="badge badge--outline">NLP</span>
                     </div>
                 </div>
 
-                <!-- Project 4 — Portfolio -->
-                <div class="project-card glass tilt-card reveal reveal-delay-4">
+                <!-- Project 5: ML Repo -->
+                <div class="project-card glass tilt-card reveal reveal-delay-5">
                     <div class="card-glare"></div>
                     <div class="project-card__header">
-                        <div class="project-card__icon"><i class="ph ph-globe"></i></div>
+                        <div class="project-card__icon"><i class="ph ph-code"></i></div>
                         <div class="project-card__links">
-                            <a href="https://github.com/RITURAJRAMAN/My-Profile" target="_blank" title="Source Code"><i
-                                    class="ph ph-github-logo"></i></a>
+                            <a href="https://github.com/RITURAJRAMAN/Machine_Learning" target="_blank"
+                                title="Source Code"><i class="ph ph-github-logo"></i></a>
                         </div>
                     </div>
-                    <h3 class="project-card__title">This Portfolio</h3>
+                    <h3 class="project-card__title">Machine Learning Algorithms</h3>
                     <p class="project-card__desc">
-                        A modern, dark-themed portfolio built with vanilla HTML, CSS & JavaScript — featuring
-                        glassmorphism, scroll animations, and a responsive layout.
+                        A comprehensive repository of implemented machine learning algorithms and personal data science
+                        projects in Jupyter Notebooks.
                     </p>
                     <div class="project-card__tags">
-                        <span class="badge badge--outline">HTML</span>
-                        <span class="badge badge--outline">CSS</span>
-                        <span class="badge badge--outline">JavaScript</span>
+                        <span class="badge badge--outline">Python</span>
+                        <span class="badge badge--outline">Jupyter</span>
                     </div>
                 </div>
             </div>
@@ -575,6 +647,14 @@
                     </div>
                 </a>
             </div>
+
+            <!-- Show More Button Container -->
+            <div class="gallery-action reveal">
+                <button id="toggleCertifications" class="btn btn-primary btn-magnetic">
+                    <span>Show All Certifications</span> <i class="ph ph-caret-down"
+                        style="transition: transform 0.3s ease;"></i>
+                </button>
+            </div>
         </div>
     </section>
 
@@ -680,6 +760,14 @@
                     </div>
                 </a>
             </div>
+
+            <!-- Show More Button Container -->
+            <div class="gallery-action reveal">
+                <button id="toggleActivities" class="btn btn-primary btn-magnetic">
+                    <span>Show All Activities</span> <i class="ph ph-caret-down"
+                        style="transition: transform 0.3s ease;"></i>
+                </button>
+            </div>
         </div>
     </section>
 
@@ -709,7 +797,15 @@
                         <p>RITURAJRAMAN</p>
                     </div>
                 </a>
-                <a href="https://www.hackerrank.com/Rituraj_Raman" target="_blank"
+                <a href="https://www.linkedin.com/in/riturajramann/" target="_blank"
+                    class="contact-card glass social--email reveal">
+                    <div class="contact-card__icon"><i class="ph ph-shield-check"></i></div>
+                    <div class="contact-card__info">
+                        <h4>Email</h4>
+                        <p>Requires LinkedIn Login</p>
+                    </div>
+                </a>
+                <!-- <a href="https://www.hackerrank.com/Rituraj_Raman" target="_blank"
                     class="contact-card glass social--hackerrank reveal">
                     <div class="contact-card__icon"><i class="ph ph-code"></i></div>
                     <div class="contact-card__info">
@@ -772,7 +868,7 @@
                         <h4>YouTube</h4>
                         <p>Tech Channel</p>
                     </div>
-                </a>
+                </a> -->
             </div>
         </div>
     </section>
